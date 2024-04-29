@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>PFSD SKILL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h2 align="center">Student Academic Management System</h2>
+
+<a href="{% url 'facultyhome' %}">Home</a>&nbsp;&nbsp;&nbsp;
+<a href="{% url 'facultychangepw' %}">Change Password</a>&nbsp;&nbsp;&nbsp;
+<a href="{% url 'facultycourses' %}">My courses</a>&nbsp;&nbsp;&nbsp;
+<a href="#">Course content</a>&nbsp;&nbsp;&nbsp;
+<a href="{% url 'facultylogin' %}">LogOut</a>&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+<h3 align="right" style="colout:red"><i>Welcome {{fid}}</i></h3>
+
+
+<br><br>
+
+{% block 'body' %}
+
+<p>I am in Faculty Home</p>
+
+{%  endblock  %}
+</body>
+</html>

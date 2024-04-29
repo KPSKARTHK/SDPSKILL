@@ -1,0 +1,48 @@
+{%  load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PFSD SKILL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/admin_style.css' %}"  />
+</head>
+<body>
+<h2 align="center">Student Academic Management System</h2><br>
+<nav class="navbar">
+    <div class="logo">KLU</div>
+      <ul class="nav-links">
+            <div class="menu">
+
+<li> <a href="{% url 'homes' %}">Home</a>&nbsp;&nbsp;&nbsp; </li>
+<li> <a href="{% url 'about' %}">About</a>&nbsp;&nbsp;&nbsp;</li>
+<li class="services">
+
+    <a href="#">Login</a>
+
+    <ul class="dropdown">
+            <li><a href="{% url 'studentlogin' %}">Student  </a></li>
+            <li><a href="{% url 'facultylogin' %}">Faculty</a></li>
+            <li><a href="{% url 'logins' %}">Login</a></li>
+
+          </ul>
+
+    &nbsp;&nbsp;&nbsp;</li>
+<li> <a href="{% url 'contact' %}">Contact us</a>&nbsp;&nbsp;&nbsp;</li>
+
+            </div>
+      </ul>
+</nav>
+<br><br>
+
+{%  block  'body' %}
+<p>I am in Home</p><br><br><br><br>
+
+<center>
+<img src="{%  static 'images/sms.jpg' %}" size="40m">
+    </center>
+{%  endblock %}
+
+
+
+</body>
+</html>
